@@ -35,6 +35,7 @@ h1{
   gap: 10px;
 }
 
+/* section1 main news */
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -71,7 +72,7 @@ h1{
   opacity: 0.9;
 }
 
- /* section2 */
+ /* section2 news */
 h2{
   text-align: center;
   justify-content: center;
@@ -82,4 +83,56 @@ h2{
 .news{
   width: 80%;
   display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+td{
+  width: 160px;
+  padding: 7px;
+}
+td span{
+  display: block;
+}
+td span:nth-child(1){
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+td[rowspan="4"]{
+  width: 320px;
+} 
+
+/* section3 planResultBox */
+.planResultBox{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.planBox{
+  width: 40%;
+  height: 300px;
+  background-color: pink;
+}
+.resultBox{
+  width: 40%;
+  height: 300px;
+  background-color: blue;
+}
+
+/* section4 recordRankBox */
+.recordRankBox{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.recordBox{
+  width: 40%;
+  height: 300px;
+  background-color: pink;
+}
+.rankBox{
+  width: 40%;
+  height: 300px;
+  background-color: blue;
 }

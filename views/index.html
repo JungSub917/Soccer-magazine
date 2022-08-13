@@ -51,61 +51,103 @@
             <div class="swiper-slide"><img src="/images/banner03.jpg" alt=""></div>
             <div class="swiper-slide"><img src="/images/banner04.jpg" alt=""></div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
   </section>
   <section>
     <h2>최신뉴스</h2>
     <div class="news">
-      <div class="box newsList01">
-        <div class="news01">
-          <img src="/images/news01.jpg" alt="">
-          <span>첼시, 바르셀로나 '초대형'선수 영입 임박...최종 합의 완료</span>
-          <span>포포투</span>
-        </div>
-        <div class="news02">
-          <img src="/images/news02.jpg" alt="">
-          <span>'EPL 팀 맞아?'... 황희찬뛰는 울브스, 포르투갈 선수로 베스트11 가능</span>
-          <span>인터풋볼</span>
-        </div>
-        <div class="news03">
-          <img src="/images/news03.jpg" alt="">
-          <span>日미나미노 챔스 탈락 원흉 지목, 현지서 "유령" 맹비난</span>
-          <span>스타뉴스</span>
-        </div>
-        <div class="news04">
-          <img src="/images/news04.jpg" alt="">
-          <span>PSG MF, 팬한테 또 담배 걸렸다… 훈계 듣고 ‘찐당황’</span>
-          <span>스포탈코리아</span>
-        </div>
+      <table>
+        <tr>
+          <td>
+            <img src="/images/news01.jpg" alt="">
+          </td>
+          <td>
+            <span>첼시, 바르셀로나 '초대형'선수 영입 임박...최종 합의 완료</span>
+            <span>포포투</span>
+          </td>
+          <td>
+            <img src="/images/news05.jpg" alt="">
+          </td>
+          <td>
+            <span>'2300억 투자 폭풍 반전' 달라지는 첼시 라인업…다크호스 급부상</span>
+            <span>스포츠조선</span>
+          </td>
+          <td rowspan="4">
+
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <img src="/images/news02.jpg" alt="">
+          </td>
+          <td>
+            <span>'EPL 팀 맞아?'... 황희찬뛰는 울브스, 포르투갈 선수로 베스트11 가능</span>
+            <span>인터풋볼</span>
+          </td>
+          <td>
+            <img src="/images/news06.jpg" alt="">
+          </td>
+          <td>
+            <span>우승했는데도 웃지 못한 '먹튀'... 결승 4경기째 '0분' 출전</span>
+            <span>스타뉴스</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="/images/news03.jpg" alt="">
+          </td>
+          <td>
+            <span>日미나미노 챔스 탈락 원흉 지목, 현지서 "유령" 맹비난</span>
+            <span>스타뉴스</span>
+          </td>
+          <td>
+            <img src="/images/news07.jpg" alt="">
+          </td>
+          <td>
+            <span>8년 전 방출한 FW에게 혼쭐난 맨유..."이럴 거면 다시 데려와!"</span>
+            <span>OSEN</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="/images/news04.jpg" alt="">
+          </td>
+          <td>
+            <span>PSG MF, 팬한테 또 담배 걸렸다… 훈계 듣고 ‘찐당황’</span>
+            <span>스포탈코리아</span>
+          </td>
+          <td>
+            <img src="/images/news08.jpg" alt="">
+          </td>
+          <td>
+            <span>"HERE WE GO!" 맨시티, '라 마시아 출신' 22세 LB 품는다</span>
+            <span>OSEN</span>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section>
+    <h2>일정/결과</h2>
+    <div class="planResultBox">
+      <div class="planBox">
+
       </div>
-      <div class="box newsList02">
-        <div class="news05">
-          <img src="/images/news05.jpg" alt="">
-          <span>'2300억 투자 폭풍 반전' 달라지는 첼시 라인업…다크호스 급부상</span>
-          <span>스포츠조선</span>
-        </div>
-        <div class="news06">
-          <img src="/images/news06.jpg" alt="">
-          <span>우승했는데도 웃지 못한 '먹튀'... 결승 4경기째 '0분' 출전</span>
-          <span>스타뉴스</span>
-        </div>
-        <div class="news07">
-          <img src="/images/news07.jpg" alt="">
-          <span>8년 전 방출한 FW에게 혼쭐난 맨유..."이럴 거면 다시 데려와!"</span>
-          <span>OSEN</span>
-        </div>
-        <div class="news08">
-          <img src="/images/news08.jpg" alt="">
-          <span>"HERE WE GO!" 맨시티, '라 마시아 출신' 22세 LB 품는다</span>
-          <span>OSEN</span>
-        </div>
+      <div class="resultBox">
+      
       </div>
-      <div class="box newsList03">
+    </div>
+  </section>
+  <section>
+    <h2>순위/기록</h2>
+    <div class="recordRankBox">
+      <div class="rankBox">
+
       </div>
-      <div class="box newsList04 ">
+      <div class="recordBox">
+      
       </div>
     </div>
   </section>
@@ -126,13 +168,9 @@
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+        }
       });
     </script>
-
+  
 </body>
 </html>
