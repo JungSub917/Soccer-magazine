@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soccer magazine</title>
+  <title>Soccer Magazine</title>
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/main.css">
   <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-/>
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
   <header>
@@ -18,25 +17,25 @@
       <ul class="head">
         <li><a href="#">최신뉴스</a></li>
         <li><a href="#">영상</a></li>
-        <h1 class="head title"><a href="#">Soccer magazine</a></h1>
+        <h1 class="head title"><a href="/">Soccer magazine</a></h1>
         <li><a href="#">일정/결과</a></li>
-        <li><a href="#">기록/순위</a></li>
+        <li><a href="#">게시판</a></li>
       </ul>
     </nav>
     <hr>
       <div class="bar">
         <div class="current-time">
-          오늘의 날짜 : use date-fns
+          오늘의 날짜: use javascript
         </div>
         <div class="gnb">
           <div class="search">
-            <a href="#">찾기</a>
+            <a href="/subscribe">구독</a>
           </div>
           <div class="login">
-            <a href="#">로그인</a>
+            <a href="/login">로그인</a>
           </div>
           <div class="registor">
-            <a href="#">회원가입</a>
+            <a href="/register">회원가입</a>
           </div>
         </div>
       </div>
@@ -130,24 +129,29 @@
     </div>
   </section>
   <section>
-    <h2>일정/결과</h2>
-    <div class="planResultBox">
-      <div class="planBox">
-
+    <!-- 탭모양의 레이아웃 제작하세요. -->
+    <div class="tabs-container">
+      <div class="tab-btns-box">
+        <ul class="tab-btns">
+          <li><a href="#tab-contnet01" class="active">일정</a></li>
+          <li><a href="#tab-contnet02">결과</a></li>
+          <li><a href="#tab-contnet03">순위</a></li>
+          <li><a href="#tab-contnet04">기록</a></li>
+        </ul>
       </div>
-      <div class="resultBox">
-      
-      </div>
-    </div>
-  </section>
-  <section>
-    <h2>순위/기록</h2>
-    <div class="recordRankBox">
-      <div class="rankBox">
-
-      </div>
-      <div class="recordBox">
-      
+      <div class="tab-contents-box">
+        <div class="tab-content tab-contente01" id="tab-contnet01">
+          일정
+        </div>
+        <div class="tab-content tab-contente02" id="tab-contnet02">
+          결과
+        </div>
+        <div class="tab-content tab-contente03" id="tab-contnet03">
+          순위
+        </div>
+        <div class="tab-content tab-contente04" id="tab-contnet04">
+          기록
+        </div>
       </div>
     </div>
   </section>
@@ -171,6 +175,6 @@
         }
       });
     </script>
-  
+    <script src="/script/index.js"></script>
 </body>
 </html>

@@ -103,36 +103,36 @@ td[rowspan="4"]{
   width: 320px;
 } 
 
-/* section3 planResultBox */
-.planResultBox{
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-.planBox{
-  width: 40%;
-  height: 300px;
-  background-color: pink;
-}
-.resultBox{
-  width: 40%;
-  height: 300px;
-  background-color: blue;
+/* section03 */
+.tabs-container{
+  width: 300px;
 }
 
-/* section4 recordRankBox */
-.recordRankBox{
+.tab-btns-box{
+
+}
+.tab-btns{
   display: flex;
-  justify-content: center;
-  margin: auto;
 }
-.recordBox{
-  width: 40%;
-  height: 300px;
-  background-color: pink;
+.tab-btns-box a{
+  display: block;
+  padding: 15px;
 }
-.rankBox{
-  width: 40%;
+.tab-btns-box a:hover,
+.tab-btns-box a.active{
+  background-color: gray;
+  color: white;
+}
+.tab-contents-box{
+  border: 1px solid gray;
   height: 300px;
-  background-color: blue;
+  background-color: azure;
+  align-items: center;
+  text-align: center;
+}
+.tab-content{
+  display: none;
+}
+.tab-content.active{
+  display: block;
 }
