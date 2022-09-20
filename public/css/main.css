@@ -6,7 +6,12 @@
   margin-bottom: 20px;
   text-align: center;
   justify-content: space-evenly;
-  
+}
+.title{
+  font-family: 'Maven Pro', sans-serif;
+}
+.title span{
+  background-size: 10;
 }
 .head li{
   font-size: 20px;

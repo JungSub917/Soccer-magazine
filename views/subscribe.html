@@ -7,6 +7,7 @@
   <title>Soccer Magazine</title>
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/subscribe.css">
 </head>
 <body>
   <header>
@@ -26,13 +27,13 @@
         </div>
         <div class="gnb">
           <div class="search">
-            <a href="/subscribe">구독</a>
+            <a href="/subscribe.html">구독</a>
           </div>
           <div class="login">
-            <a href="/login">로그인</a>
+            <a href="/login.html">로그인</a>
           </div>
           <div class="registor">
-            <a href="/register">회원가입</a>
+            <a href="/register.html">회원가입</a>
           </div>
         </div>
       </div>
@@ -42,50 +43,50 @@
     <!-- 콜랩스 모양의 레이아웃 제작하세요. -->
     <h2>구독</h2>
     <div class="accordion-container">
-      <dl class="accordion-box">
-        <dt class="accordion-title">월간 이용권</dt>
-        <dd class="accordion-content">한 달 무료체험 월 4,900원 (2022.10.18.부터 결제)</dd>
-        <dt class="accordion-title">월간 이용권 +</dt>
-        <dd class="accordion-content">한 달 무료체험 월 9,800원 + SPOTV ON + SPOTV ON 2(2022.10.18.부터 결제)</dd>
-        <dt class="accordion-title">연간 이용권</dt>
-        <dd class="accordion-content">한 달 무료체험 연 46,800원 (2022.10.18.부터 결제)</dd>
-        <dt class="accordion-title">연간 이용권 +</dt>
-        <dd class="accordion-content">한 달 무료체험 월 79,900원 + SPOTV ON + SPOTV ON 2 + VOD 다수(2022.10.18.부터 결제)</dd>
-      </dl>
+      <div class="accordion-box">
+        <div class="accordion-title"><span>월간 이용권</span></div>
+        <div class="accordion-content">
+          한 달 무료체험 월 4,900원 (2022.10.18.부터 결제)
+        </div>
+      </div>
+      <div class="accordion-box">
+        <div class="accordion-title"><span>월간 이용권 plus</span></div>
+        <div class="accordion-content">
+          한 달 무료체험 월 9,800원 + SPORT ON + SPORT ON 2(2022.10.18.부터 결제)
+        </div>
+      </div>
+      <div class="accordion-box">
+        <div class="accordion-title"><span>연간 이용권</span></div>
+        <div class="accordion-content">
+          한 달 무료체험 연 46,800원 (2022.10.18.부터 결제)
+        </div>
+      </div>
+      <div class="accordion-box">
+        <div class="accordion-title"><span>연간 이용권 plus</span></div>
+        <div class="accordion-content">
+          한 달 무료체험 월 79,900원 + SPOTV ON + SPOTV ON 2 + VOD 다수(2022.10.18.부터 결제)
+        </div>
+      </div>
     </div>
   </section>
-  <style>
-    .accordion-container{
-      width: 800px;
-    }
-    .accordion-title.active{
-      background-color: skyblue;
-    }
-    .accordion-title:hover{
-      background-color: skyblue;
-    }
-    .accordion-content.active{
-      border-radius: 1px solid skyblue;
-      display: block;
-    }
-    .accordion-content{
-      display: none;
-      height: 200px;
-      border: 1px solid skyblue;
-    }
-  </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   <script>
-    $('.accordion-title').on('click', function(){
-      $('.accordion-title').removeClass('active');
-      $(this).addClass('active');
+  let toggle = [false, false, false, false];
 
-      $('.accordion-content').removeClass('active')
-      $(this).next().addClass('active');
+  $('.accordion-title').on('click', function(){
+  let num = $(this).parent().index();
+  console.log(num);
 
-      $('.accordion-title').eq(0).trigger('clikc');
-      //0번재 타이틀이 클릭된 것과같이 클릭
-    })
+  if( !toggle[num]){
+    $(this).next().css({'height': '150px'});
+    toggle[num] = true; 
+  }
+  else{
+    $(this).next().css({'height': '0px'});
+    toggle[num] = false;
+  }
+})
   </script>
 </body>
 </html>
