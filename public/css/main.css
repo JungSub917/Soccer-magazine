@@ -40,13 +40,14 @@ h1{
   gap: 10px;
 }
 
-/* section1 main news */
+/* section1 banner */
+.banner{
+  margin-bottom: 50px;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -79,13 +80,7 @@ h1{
 }
 
  /* section2 news */
-h2{
-  text-align: center;
-  justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-size: 30px;
-}
+
 .news-title-box{
   width: 80%;
   margin: auto;
@@ -93,16 +88,26 @@ h2{
   border-bottom: 2px solid black;
   display: flex;
 }
-.news-title-box p{
-
-  color: #999999;
-  justify-content: flex-end;
+h2{
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
 }
-.news{
+.more-button{
+  padding-top: 50px;
+  color: #999999;
+  margin-right: 700px;
+  position: relative;
+  float: right;
+}
+.news-box{
   width: 80%;
   display: flex;
   justify-content: center;
   margin: auto;
+
 }
 
 td{
@@ -132,6 +137,13 @@ td[rowspan="4"]{
 }
 
 /* section03 */
+.record{
+  margin-bottom: 50px;
+}
+.tabs-container{
+  width: 80%;
+  margin: auto;
+}
 .tabs-container{
   width: 300px;
 }
