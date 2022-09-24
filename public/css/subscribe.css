@@ -1,15 +1,17 @@
 /* header */
 .head{
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
   text-align: center;
   justify-content: space-evenly;
+  border-bottom: 2px solid black;
+  padding-bottom: 30px;
 }
-.title{
+.head-title{
   font-family: 'Maven Pro', sans-serif;
 }
-.title span{
+.head-title span{
   background-size: 10;
 }
 .head li{
@@ -19,28 +21,37 @@
 h1{
   font-size: 40px;
 }
-
-.bar{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  /* display: flex; */
-
-}
 .current-time{
   justify-content: center;
   text-align: center;
   font-size: 15px;
 }
 .gnb{
+  position: absolute;
+  top: 10px;
+  right: 25px;
   display: flex;
   justify-content: flex-end;
   text-align: center;
   padding-right: 10px;
   gap: 10px;
 }
-/* section subscribe */
+.slogan{
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.title-box{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 25px;
+  border-bottom: 2px solid black;
+}
+
+/* section1 subscribe */
 h2{
-  width: 53%;
   text-align: center;
   justify-content: center;
   margin: auto;
@@ -49,7 +60,7 @@ h2{
   font-size: 30px;
 }
 .subscribe-box{
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 .accordion-container{
   width: 800px;
@@ -66,7 +77,7 @@ h2{
   align-items: center;
 }
 .accordion-content{
-  color: aliceblue;
+  color: white;
   font-size: 15px;
   height: 0px;
   overflow: hidden;
@@ -75,17 +86,30 @@ h2{
 }
 .accordion-box{
   padding: 10px;
-  background-color: #00956E;
+  background-color: #292929;
   overflow: hidden;
   border-radius: 10px;
   margin: 5px 0;
+}
+/* section2 subscribe-introduce-box */
+.subscribe-introduce{
+  width: 50%;
+  font-size: 15px;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+/* section3 subscribe-explain-box */
+
+.subscribe-explain{
+
 }
 
 /* footer */
 footer{
   width: 100%;
-  height: 150px;
-  background-color: #666666;;
+  height: 200px;
+  background-color: #292929;;
   color: #999999;
 }
 .footer{
@@ -96,10 +120,24 @@ footer{
 .footer-content{
   width: 1000px;
   margin: auto;
-  padding-top: 50px;
+  padding-top: 30px;
   text-align: center;
+  margin-bottom: 10px;
 }
 .footer-content span{
   font-size: 15px;
   padding: 15px;
+}
+.user-agreement{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.user-agreement span{
+  font-size: 13px;
+  padding: 15px;
+}
+footer p{
+  text-align: center;
+  color: #999999;
+  margin-bottom: 10px;
 }
