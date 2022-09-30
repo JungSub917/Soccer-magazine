@@ -1,0 +1,34 @@
+/**/
+.tabs-container{
+  width: 80%;
+  margin: auto;
+}
+.tabs-container{
+  width: 300px;
+}
+
+.tab-btns{
+  display: flex;
+}
+.tab-btns-box a{
+  display: block;
+  padding: 15px;
+}
+.tab-btns-box a:hover,
+.tab-btns-box a.active{
+  background-color: gray;
+  color: white;
+}
+.tab-contents-box{
+  border: 1px solid gray;
+  height: 300px;
+  background-color: azure;
+  align-items: center;
+  text-align: center;
+}
+.tab-content{
+  display: none;
+}
+.tab-content.active{
+  display: block;
+}

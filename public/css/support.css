@@ -1,22 +1,25 @@
+.h2-design01{
+  width: 70%;
+  margin: auto;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
 .support{
   width: 70%;
   height: 700px;
   margin: auto;
-  margin-top: 100px;
   display: flex;
   justify-content: center;
 }
-
 /* nav */
 .navigation-support{
   width: 15%;
 }
-.h2-design01{
-  font-size: 25px;
-  margin-bottom: 30px;
-}
 .navigation-support ul{
-  margin-bottom: 250px;
+  margin-bottom: 300px;
 }
 .navigation-support ul li{
   font-size: 15px;
@@ -26,7 +29,7 @@
   width: 100%;
 }
 .customer-center h4{
-  font-size: 20px;
+  font-size: px;
   margin-bottom: 10px;
 }
 .customer-center h4 span{
@@ -118,4 +121,3 @@ input{
   font-weight: bold;
 }
 
-/* customer-center */

@@ -1,4 +1,4 @@
-/* section1 banner */
+/* section01 banner */
 .banner{
   margin-bottom: 50px;
 }
@@ -38,7 +38,7 @@
   opacity: 0.9;
 }
 
- /* section2 news */
+ /* section02 news */
 h2{
   text-align: center;
   justify-content: center;
@@ -103,7 +103,7 @@ td[rowspan="4"]{
 .news span:nth-child(1):hover{
   text-decoration: underline;
 }
-/* section3 video */
+/* section03 video */
 .video{
   margin-bottom: 50px;
 }
@@ -117,45 +117,25 @@ td[rowspan="4"]{
 iframe{
   margin: 9px;
 }
-/* section4 record */
-.record{
-  width: 100%;
-  margin-bottom: 100px;
-}
-.tabs-container{
+/* section04 schedule-ranking-record */
+.schedule-ranking-record{
   width: 80%;
   margin: auto;
-}
-.tabs-container{
-  width: 300px;
-}
-
-.tab-btns{
+  margin-bottom: 50px;
   display: flex;
 }
-.tab-btns-box a{
-  display: block;
-  padding: 15px;
+.title-box02{
+  display: flex;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
 }
-.tab-btns-box a:hover,
-.tab-btns-box a.active{
-  background-color: gray;
-  color: white;
+.schedule,
+.ranking,
+.record{
+  width: 450px;
+  position: relative;
+  margin-right: 30px;
 }
-.tab-contents-box{
-  border: 1px solid gray;
-  height: 300px;
-  background-color: azure;
-  align-items: center;
-  text-align: center;
-}
-.tab-content{
-  display: none;
-}
-.tab-content.active{
-  display: block;
-}
-
 /* footer */
 footer{
   width: 100%;
