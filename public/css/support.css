@@ -1,0 +1,121 @@
+.support{
+  width: 70%;
+  height: 700px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+/* nav */
+.navigation-support{
+  width: 15%;
+}
+.h2-design01{
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.navigation-support ul{
+  margin-bottom: 250px;
+}
+.navigation-support ul li{
+  font-size: 15px;
+  line-height: 25px;
+}
+.customer-center{
+  width: 100%;
+}
+.customer-center h4{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.customer-center h4 span{
+  color: #45a4d7;
+}
+.customer-center p:nth-of-type(1){
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.customer-center p:nth-of-type(2),
+.customer-center p:nth-of-type(3){
+  font-size: 11px;
+}
+.customer-center p:nth-of-type(3){
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.customer-center p:nth-of-type(4){
+  font-size: 14px;
+  font-weight: bold;
+}
+/* search01 support */
+.search-support{
+  width: 900px;
+  height: 130px;
+  border: 3px solid #eeeeee;
+  padding-left: 40px;
+  padding-top: 23px;
+  margin-bottom: 60px;
+}
+h3{
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+input{
+  outline: none;
+}
+.search-text{
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.search-btn{
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.notice-faq{
+  display: flex;
+  justify-content: center;
+}
+/* notice */
+.title-box02{
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+.notice,
+.faq{
+  width: 400px;
+  position: relative;
+  margin-right: 30px;
+}
+.h2-design02{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.more-button02{
+  color: #999999;
+  position: absolute;
+  top: 35px;
+  right: 0
+}
+.notice-content,
+.faq-content{
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+.notice-content li,
+.faq-content li{
+  font-size: 13px;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 30px;
+}
+.notice-content li:nth-child(1){
+  font-weight: bold;
+}
+
+/* customer-center */
