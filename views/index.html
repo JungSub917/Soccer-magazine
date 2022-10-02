@@ -20,22 +20,49 @@
         <li><a href="#">최신뉴스</a></li>
         <li><a href="#">영상</a></li>
         <h1 class="head-title"><a href="/">S<span><img src="/images/title-O.png" alt=""></span>ccer magazine</a></h1>
-        <li><a href="/record.html">일정/결과</a></li>
-        <li><a href="/support.html">고객센터</a></li>
+        <li><a href="/record">일정/결과</a></li>
+        <li><a href="/support">고객센터</a></li>
       </ul>
     </nav>
     <div class="bar">
       <div class="gnb">
         <div class="search">
-          <a href="/subscribe.html">정기구독</a>
+          <a href="/subscribe">정기구독</a>
         </div>
-        <div class="login">
-          <a href="/login.html">로그인</a>
-        
+        <div class="login" id="loginBtn">
+          <a href="/login">로그인</a>
         </div>
-        <div class="registor">
-          <a href="/register.html">회원가입</a>          
+        <style>
+          .hide{
+            display: none;
+          }
+        </style>
+        <div class="logout  hide" id="logoutBtn">
+          <a href="">로그아웃</a>
         </div>
+        <div class="registor" id="registerBtn">
+          <a href="/register">회원가입</a>          
+        </div>
+        <script>
+          const loginBtn = document.querySelector('#loginBtn');
+          const registerBtn = document.querySelector('#registerBtn');
+          const logoutBtn = document.querySelector('#logoutBtn');
+          if(document.cookie){
+            loginBtn.classList.add('hide');
+            registerBtn.classList.add('hide');
+            logoutBtn.classList.remove('hide');
+          }else{
+            logoutBtn.classlist.add('hide');
+          }
+          
+          logoutBtn.addEventListener('click', ()=>{
+            document.cookie = 'login=ok; max-age=0';
+            loginBtn.classList.remove('hide');
+            registerBtn.classList.remove('hide');
+            logoutBtn.classList.add('hide');
+          })
+        </script>
+
       </div>
       <div class="slogan">
         PLAY SOCCER, START MAGAZINE!
@@ -274,6 +301,81 @@
           disableOnInteraction: false,
         }
       });
+  </script>
+  <style>
+    .cookie-box{
+      width: 400px;
+      height: 300px;
+      background-color: orange;
+      position: fixed;
+      right: 50px;
+      bottom: 50px;
+      padding: 20px;
+      display: none;
+      z-index: 9999;
+    }
+    .cookie-box>p{
+      text-align: right;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .cookie-box>p>span{
+      cursor: pointer;
+    }
+    .cookie-box>h3{
+      text-align: center;
+    }
+    .cookie-box>.accept{
+      padding: 10px;
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+    }
+  </style>
+  <div class="cookie-box">
+    <p class="close-btn"><span>&times;</span></p>
+    <h3>Cookie Privacy</h3>
+    <button class="accept">Accept All Cookie</button>
+    <p><input type="checkbox" class="cookieCheck"> 오늘 하루 안보기</p>
+  </div>
+  <script>
+    const cookieBox = docuemnt.querySelector('.cookie-box');
+    let cookieCtrl = false;
+    // 내 사이트에 접속 했을 때 회사가 고객을 구분하기 위해서도 쿠키 사용
+    document.querySelector('.close-btn').addEventListener('click', function(){
+      //document.querySelector('.cookie-box').classList.add('hide');
+      cookieBox.style.display = "none";
+    })
+    document.querySelector('.accept').addEventListener('click', function(){
+      document.cookie = "SoocerMagazine=brand; max-age=60*60*24*30";
+      document.querySelector('.cookie-box').classList.add('hide');
+    })
+    document.querySelector('.cookieCheck').addEventListener('change', function(){
+      cookieCtrl = !cookieCtrl;
+      if(!cookieCtrl){
+        document.cookie = "brandName-brand; max-age=0";
+      }
+      else{
+        document.cookie = "brandName=brand; max-age=60*60*24*30";
+      }
+    })
+    function getCookieName(name){
+      // 정규 표현식 중 문장열에서 일치되 문장열 찾는 함수
+      var r = document.cookie.match("\\b" + name + "=[^;]\\b");
+      return r ? r[1] : '';
+    }
+    window.onload = () => {
+      let findName = getCookName('brnadName');
+      console.log(findName);
+      if(findName === 'brnad'){
+        cookieBox.style.display = "none";
+      }
+      else{
+        cookieBox.style.display = "flex";
+      }
+    }
   </script>
   <script src="/script/index.js"></script>
 </body>

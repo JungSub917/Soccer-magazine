@@ -1,7 +1,8 @@
 .login{
   display: flex;
-  height: 100vh;
   margin: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
   justify-content: center;
   align-items: center;
 }
@@ -13,13 +14,13 @@ h1{
   padding-left: 70px;
   margin-bottom: 50px;
 }
-#userName{
+#id{
   width: 460px;
   height: 56px;
   font-size: 16px;
   padding-left: 10px;
 }
-#userPwd{
+#pw{
   width: 460px;
   height: 56px;
   font-size: 16px;
@@ -49,9 +50,7 @@ h1{
 .login-box .registerbtn span:hover{
   color:#07f;
 }
-.registerbtn{
 
-}
 .platform-loginbtn{
   padding-top: 50px;
 }
@@ -66,4 +65,12 @@ h1{
 }
 .platform-loginbtn button:hover{
   background-color: #e5e8eb;
+}
+
+/* footer-loginpage */
+.login-footer{
+  font-size: 9px;
+  height: 50px;
+  background-color: white;
+  margin: auto;
 }

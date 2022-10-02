@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/public.css">
   <link rel="stylesheet" href="/css/login.css">
-  <title>Soccer Magazine Login</title>
+  <title>Soccer Magazine 로그인</title>
 </head>
 <body>
   <section class="login">
@@ -19,11 +19,11 @@
         <h1 class="head-title"><a href="/">S<span><img src="/images/title-O.png" alt=""></span>ccer magazine</a></h1>
         <div>
           <label for="userName"></label>
-          <input type="text" id="userName" name="userName" placeholder="ID 또는 E-Mail" autocomplete="off">
+          <input type="text" id="id" name="id" placeholder="ID 또는 E-Mail" autocomplete="off">
         </div>
         <div>
           <label for="userPwd"></label>
-          <input type="password" id="userPwd" name="userPwd" placeholder="비밀번호">
+          <input type="password" id="pw" name="pw" placeholder="비밀번호">
         </div>
         <div class="ck">
           <input type="checkbox" id="checkbox">
@@ -33,7 +33,7 @@
           <button class="loginbtn">로그인</button>
         </div>
         <div class="registerbtn">
-          <span><a href="#">회원가입 </a></span>
+          <span><a href="/register">회원가입 </a></span>
           <span><a href="#">ID 찾기</a></span>
           <span><a href="#">비밀번호 찾기</a></span>
         </div>
@@ -46,6 +46,41 @@
       </div>  
     </div>
   </section>
-  <script src="/script/index.js"></script>
+  <footer class="login-footer">
+    <div class="login-footer">
+      <p>PLAY SOCCER, START MAGAZINE!</p>
+      <p>본 사이트는 비상업적 용도로 만들어진 포트폴리오용 사이트입니다.</p>
+    </div>
+  </footer>
+  <!-- <script src="/script/index.js"></script> -->
+  <script>
+    const loginbtn = document.querySelector('.loginbtn');
+    const userName = document.querySelector('#userName');
+    const userPwd = document.querySelector('#userPwd');
+    
+    loginbtn.addEventListener('click', function(){
+      // console.log(userName.value, userPwd.value);
+      // const user = { id : id.value, pw : pw.value}
+
+      fetch('http://localhost:3000/login', {
+        method: 'POST',
+        body: JSON.stringify({ id : id.value, pw : pw.value}),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      })
+  .then((res) => res.json())
+  .then(json => {
+    if(json.success){
+      document.cookie = 'login=ok'
+      location.replace('http://localhost:3000/');
+      //리다이렉트 : index.html
+    }
+    else{
+      alert(json.message);
+    }
+  });
+    });
+  </script>
 </body>
 </html>

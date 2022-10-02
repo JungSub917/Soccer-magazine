@@ -38,3 +38,5 @@ tabBox.addEventListener( 'click', (event)=>{
         }
     })
 })
+document.querySelector('.tab-btns>li:nth-child(1)>a').click();
+// 트리거: 사용자가 클릭한 것처럼 만듬

@@ -1,4 +1,5 @@
-/* section1 subscribe */
+
+/* section01 subscribe */
 h2{
   text-align: center;
   justify-content: center;
@@ -39,16 +40,42 @@ h2{
   border-radius: 10px;
   margin: 5px 0;
 }
-/* section2 subscribe-introduce-box */
+/* section02 subscribe-introduce-box */
 .subscribe-introduce{
   width: 50%;
   font-size: 15px;
-  justify-content: center;
   margin: auto;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
+  justify-content: center;
 }
-/* section3 subscribe-explain-box */
+.magazine-img-box{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  float: left;
+}
+.magazine-img-box p{
+  text-align: center;
+}
+/* section03 subscribe-explain-box */
 
-.subscribe-explain{
-
+/* section04 exchange */
+table{
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+tr,
+td{
+  border: 1px solid black;
+}
+tr td:nth-child(1){
+  text-align: center;
+  width: 60px;
+  background-color: #999999;
+}
+tr td:nth-child(2){
+  padding-left: 10px;
 }
