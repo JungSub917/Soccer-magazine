@@ -52,35 +52,6 @@
       <p>본 사이트는 비상업적 용도로 만들어진 포트폴리오용 사이트입니다.</p>
     </div>
   </footer>
-  <!-- <script src="/script/index.js"></script> -->
-  <script>
-    const loginbtn = document.querySelector('.loginbtn');
-    const userName = document.querySelector('#userName');
-    const userPwd = document.querySelector('#userPwd');
-    
-    loginbtn.addEventListener('click', function(){
-      // console.log(userName.value, userPwd.value);
-      // const user = { id : id.value, pw : pw.value}
-
-      fetch('http://localhost:3000/login', {
-        method: 'POST',
-        body: JSON.stringify({ id : id.value, pw : pw.value}),
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-      })
-  .then((res) => res.json())
-  .then(json => {
-    if(json.success){
-      document.cookie = 'login=ok'
-      location.replace('http://localhost:3000/');
-      //리다이렉트 : index.html
-    }
-    else{
-      alert(json.message);
-    }
-  });
-    });
-  </script>
+  <script src="/script/login.js"></script>
 </body>
 </html>
