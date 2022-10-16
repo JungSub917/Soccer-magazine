@@ -6,7 +6,7 @@
     "express": "^4.18.1"
   },
   "scripts": {
-    "start": "node app/server.js"
+    "start": "node app/server.js && cd .."
   },
   "name": "y",
   "version": "1.0.0",
