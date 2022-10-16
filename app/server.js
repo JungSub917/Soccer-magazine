@@ -23,7 +23,7 @@ const users = [
 ]
 
 app.get('/', (req, res)=>{ 
-  res.sendFile( path.join( __dirname, 'views/index.html' ))
+  res.sendFile( path.join( __dirname, 'views','/index.html' ))
 })
 app.get('/subscribe', (req, res)=>{ 
   res.sendFile( path.join( __dirname, 'views/subscribe.html' ))
@@ -63,7 +63,7 @@ app.get('/record', (req, res)=>{
   res.sendFile( path.join( __dirname, 'views/record.html' ))
 })
 app.get('/register', (req, res)=>{ 
-  res.sendFile( path.join( __dirname, 'views/register.html' ))
+  res.sendFile( path.join( __dirname, 'views','register.html' ))
 })
 app.get('/*', (req, res)=>{ 
   res.sendFile( path.join( __dirname, 'views/404.html' ))
