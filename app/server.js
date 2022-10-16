@@ -23,13 +23,13 @@ const users = [
 ]
 
 app.get('/', (req, res)=>{ 
-  res.sendFile( path.join( __dirname, '../views', '/index.html' ))
+  res.sendFile( path.join( __dirname, 'views/index.html' ))
 })
 app.get('/subscribe', (req, res)=>{ 
-  res.sendFile( path.join( __dirname, '../views', '/subscribe.html' ))
+  res.sendFile( path.join( __dirname, 'views/subscribe.html' ))
 })
 app.get('/login', (req, res)=>{ 
-  res.sendFile( path.join( __dirname, '../views', '/login.html' ))
+  res.sendFile( path.join( __dirname, 'views/login.html' ))
 })
 app.post('/login', (req, res)=>{ 
   // console.log( req.body.id  );
@@ -57,16 +57,16 @@ app.post('/login', (req, res)=>{
     else  res.send( { success : false, message: "id 또는 pw를 확인하세요."} );
 })
 app.get('/support', (req, res)=>{ 
-  res.sendFile( path.join( __dirname, '../views', '/support.html' ))
+  res.sendFile( path.join( __dirname, 'views/support.html' ))
 })
 app.get('/record', (req, res)=>{ 
-  res.sendFile( path.join( __dirname, '../views', '/record.html' ))
+  res.sendFile( path.join( __dirname, 'views/record.html' ))
 })
 app.get('/register', (req, res)=>{ 
-  res.sendFile( path.join( __dirname, '../views', '/register.html' ))
+  res.sendFile( path.join( __dirname, 'views/register.html' ))
 })
 app.get('/*', (req, res)=>{ 
-  res.sendFile( path.join( __dirname, '../views', '/404.html' ))
+  res.sendFile( path.join( __dirname, 'views/404.html' ))
 })
 
 app.listen(PORT, ()=>{
