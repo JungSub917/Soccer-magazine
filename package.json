@@ -4,5 +4,23 @@
     "date-fns": "^2.29.1",
     "dotenv": "^16.0.1",
     "express": "^4.18.1"
-  }
+  },
+  "scripts": {
+    "start": "node app/server.js"
+  },
+  "name": "y",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JungSub917/Soccer-magazine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JungSub917/Soccer-magazine/issues"
+  },
+  "homepage": "https://github.com/JungSub917/Soccer-magazine#readme",
+  "description": ""
 }
